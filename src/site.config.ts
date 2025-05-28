@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	*/
 	title: "Yosof Badr",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "https://yosofbadr.github.io/",
+	url: "https://yosofbadr.com/",
 };
 
 // Used to generate links in both the Header & Footer.
