@@ -12,7 +12,7 @@ interface Props {
 }
 
 const {
-	meta: { articleDate, description = siteConfig.description, ogImage, title },
+	meta: { articleDate = undefined, description = siteConfig.description, ogImage = undefined, title = siteConfig.title },
 } = Astro.props;
 ---
 

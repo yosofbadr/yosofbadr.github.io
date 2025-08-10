@@ -4,6 +4,9 @@ export default {
 	plugins: [require("@tailwindcss/typography")],
 	theme: {
 		extend: {
+			fontFamily: {
+				mono: ["Roboto Mono", "monospace"],
+			},
 			typography: () => ({
 				DEFAULT: {
 					css: {

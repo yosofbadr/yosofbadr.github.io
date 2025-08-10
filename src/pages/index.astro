@@ -31,38 +31,37 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 		<SocialList />
 	</section>
 	<section class="mt-16">
-		<h2 class="title text-accent mb-6 text-xl">Creative Coding</h2>
-		<ul class="space-y-6" role="list">
-			<li><a href="https://yosofbadr.com/ChaosGame/">Chaos Game</a></li>
-			<li><a href="https://yosofbadr.com/Atoms/">Atoms</a></li>
-		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
-		<ul class="space-y-6" role="list">
-			{
-				allPostsByDate.map((p) => (
-					<li class="grid gap-2 sm:grid-cols-[auto_1fr]">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	{
-		latestNotes.length > 0 && (
-			<section class="mt-16">
-				<h2 class="title text-accent mb-6 text-xl">
-					<a href="/notes/">Notes</a>
-				</h2>
-				<ul class="space-y-6" role="list">
-					{latestNotes.map((note) => (
-						<li>
-							<Note note={note} as="h3" isPreview />
-						</li>
-					))}
-				</ul>
-			</section>
-		)
-	}
+    <h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
+    <ul class="space-y-6" role="list">
+        {
+            allPostsByDate.map((p) => (
+                <li class="grid gap-2 sm:grid-cols-[auto_1fr]">
+                    <PostPreview post={p} />
+                </li>
+            ))
+        }
+    </ul>
+</section>
+<section class="mt-16">
+    <h2 class="title text-accent mb-6 text-xl"><a href="/projects/">Projects</a></h2>
+    <p class="mb-4">
+        A collection of creative coding experiments and personal projects, ranging from interactive art to utility tools.
+    </p>
+</section>
+{
+    latestNotes.length > 0 && (
+        <section class="mt-16">
+            <h2 class="title text-accent mb-6 text-xl">
+                <a href="/notes/">Notes</a>
+            </h2>
+            <ul class="space-y-6" role="list">
+                {latestNotes.map((note) => (
+                    <li>
+                        <Note note={note} as="h3" isPreview />
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )
+}
 </PageLayout>

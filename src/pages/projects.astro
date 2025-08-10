@@ -1,0 +1,21 @@
+---
+import Base from 'src/layouts/Base.astro';
+import { siteConfig } from 'src/site.config';
+---
+
+<Base meta={{ title: "Projects", description: siteConfig.description }}>
+  <h1 class="title mb-6">Projects</h1>
+  <div class="prose prose-sm prose-cactus max-w-none">
+    <p>
+      This page showcases a variety of projects, from creative coding experiments to practical applications.
+      Explore interactive art, data visualizations, and tools built with different technologies.
+    </p>
+    <section>
+      <h2>Creative Coding</h2>
+      <ul>
+        <li><a href="http://yosofbadr.com/ChaosGame/" target="_blank" rel="noopener noreferrer">Chaos Game</a></li>
+        <li><a href="http://yosofbadr.com/Atoms/" target="_blank" rel="noopener noreferrer">Atoms</a></li>
+      </ul>
+    </section>
+  </div>
+</Base>

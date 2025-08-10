@@ -3,6 +3,22 @@
 /* config for tailwindcss-typography plugin */
 @config "../../tailwind.config.ts";
 
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/roboto-mono-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/roboto-mono-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* use a selector-based strategy for dark mode */
 @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
